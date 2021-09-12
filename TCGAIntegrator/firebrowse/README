@@ -1,0 +1,42 @@
+======================
+Description
+======================
+
+firebrowse: python bindings for the Broad Institute TCGA GDAC FireBrowse Portal.
+
+This module facilitates programmatic interaction with TCGA data and analyses in
+firebrowse.org, through Python and the UNIX command line.  It offers 3 sets of
+features:
+
+1) Low-level object-oriented Python wrappers to the FireBrowse RESTful API.
+Methods in the low level interface by default return 1 page of query results per 
+call, in JSON form. TSV, CSV, and Python dicts may be returned by specifying a 
+suitable format= parameter, and multiple pages may be selected with a suitable 
+page= parameter. See the set_codec() and param_values() functions for more 
+details on these and other parameters.
+
+2) A higher level Python interface that provides simplified access for common
+bioinformatic use cases. For example, objects do not need to be explicitly 
+instantiated and functions by default return all pages of query results per
+call, in TSV format.
+
+3) And the fbget tool, for accessing the high level interface directly from
+the UNIX command line.
+
+For more details, documentation, and examples, see
+
+	https://confluence.broadinstitute.org/display/GDAC/fbget
+
+======================
+Release Notes
+======================
+
+Release notes are available on firebrowse.org, served from
+
+	https://confluence.broadinstitute.org/display/GDAC/FireBrowse+Release+Notes
+
+Notes for the Firehose data and analyses runs are available at
+
+	https://confluence.broadinstitute.org/display/GDAC/Analysis+Run+Release+Notes
+	https://confluence.broadinstitute.org/display/GDAC/Standardized+Data+Run+Release+Notes
+
