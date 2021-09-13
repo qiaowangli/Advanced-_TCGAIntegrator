@@ -1,9 +1,9 @@
 # Welcome to the Advanced TCGAIntegrator.
 
 ## Advanced TCGAIntegrator
-This is an advanced TCGAIntegrator developed based on the [TCGAIntegrator link](https://github.com/cooperlab/TCGAIntegrator)
+This is an advanced TCGAIntegrator developed based on the [TCGAIntegrator](https://github.com/cooperlab/TCGAIntegrator)
 
-The raw TCGA datasets were extracted from [TCGAIntegrator link](https://github.com/cooperlab/TCGAIntegrator). We refined the raw data with three different modes: Survival, Censor and Hybrid. The feature parts of those data would be exactly the same, which would all be a float numpy array returned by TCGAIntegrator. The key difference lies in the design of the label as we intend to analyze the dataset in three different circumstances.
+The raw TCGA datasets were extracted from [TCGAIntegrator](https://github.com/cooperlab/TCGAIntegrator). We refined the raw data with three different modes: Survival, Censor and Hybrid. The feature parts of those data would be exactly the same, which would all be a float numpy array returned by TCGAIntegrator. The key difference lies in the design of the label as we intend to analyze the dataset in three different circumstances.
 
 • **Survival Mode**: The label would be a N-length float numpy array containing the death or
 last follow up times in days for each sample, which implies that we cannot identify if the
@@ -19,3 +19,7 @@ value of a data input (single row) is 1, we keep the Survival value positive, ot
 swap the numbers for negative.
 
 ## TCGAIntegrator Usage
+
+***test.py*** provides a brief preview of this Advanced TCGAIntegrator.
+
+You would need to call the API **TCGAData.loadData()** where the first parameter would be your intended disease type. You could choose the data mode you want by using the mode parameter, the default mode would be Survival.
