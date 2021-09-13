@@ -20,6 +20,6 @@ swap the numbers for negative.
 
 ## TCGAIntegrator Usage
 
-***test.py*** provides a brief preview of this Advanced TCGAIntegrator.
+**test.py** provides a brief preview of this Advanced TCGAIntegrator.
 
-You would need to call the API **TCGAData.loadData()** where the first parameter would be your intended disease type. You could choose the data mode you want by using the mode parameter, the default mode would be Survival.
+You would need to call the API **TCGAData.loadData()** where the first parameter would be your intended disease type. You could choose the data **mode** you want by using the mode parameter, the default mode would be **Survival**.
