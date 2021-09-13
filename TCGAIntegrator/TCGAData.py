@@ -2,7 +2,7 @@
 from tcgaintegrator.BuildDataset import BuildDataset
 from scipy.io import loadmat
 import pandas as pd
-from pandas.api.types import is_string_dtype
+# from pandas.api.types import is_string_dtype
 import numpy as np
 import sys
 
